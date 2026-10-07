@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aryan Patilkulkarni | Personal Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #071426;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #071426;
+      border-bottom: 1px solid #17304d;
+      padding: 15px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      color: #35d0ba;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #35d0ba;
+    }
+
+    section {
+      padding: 70px 8%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+      color: #35d0ba;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #b9c7d8;
+      margin-bottom: 8px;
+    }
+
+    .tagline {
+      color: #35d0ba !important;
+      margin-top: 15px;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 25px;
+      color: #35d0ba;
+    }
+
+    .card {
+      background: #0d2036;
+      border: 1px solid #1d3a56;
+      border-radius: 14px;
+      padding: 25px;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      color: white;
+      margin-bottom: 10px;
+      font-size: 21px;
+    }
+
+    .card p {
+      color: #c5d1df;
+      margin-bottom: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #35d0ba;
+      color: #071426;
+      padding: 9px 17px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: white;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: #0d2036;
+      border: 1px solid #35d0ba;
+      color: #35d0ba;
+      padding: 9px 15px;
+      border-radius: 20px;
+    }
+
+    .contact a {
+      color: #35d0ba;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #8fa3b8;
+      border-top: 1px solid #17304d;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      section {
+        padding: 55px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">Aryan Patilkulkarni</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <h1>Hi, I'm <span>Aryan Patilkulkarni</span></h1>
+    <p>3rd Semester B.Tech Student</p>
+    <p>Computer Science & Engineering</p>
+    <p class="tagline">Learning, building, and growing in data science and programming.</p>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="card">
+      <p>
+        I am Aryan Patilkulkarni, a 3rd semester Computer Science &
+        Engineering student. I am developing my programming and
+        problem-solving skills through academic activities, coding
+        practice, and portfolio projects. I am particularly interested
+        in data science and continue to strengthen my Python skills.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Hello World Repository</h3>
+      <p>
+        A GitHub repository created as part of my portfolio-building
+        activities for practicing Git, GitHub, and basic programming.
+      </p>
+      <a class="button"
+         href="https://github.com/AryanPatilkulkarni-hub/hello-world-c"
+         target="_blank" rel="noopener">
+        View on GitHub
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>LeetCode Solutions Repository</h3>
+      <p>
+        A programming practice project for organizing coding solutions
+        and improving problem-solving skills.
+      </p>
+      <a class="button"
+         href="https://github.com/AkS-18/leetcode-solutions"
+         target="_blank" rel="noopener">
+        View on GitHub
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>HackerRank 3rd Semester Portfolio</h3>
+      <p>
+        My HackerRank Activity 8 repository containing solutions to the
+        five mandatory HackerRank problems and their complexity analysis.
+      </p>
+      <a class="button"
+         href="https://github.com/AryanPatilkulkarni-hub/HackerRank-3rdSem-Portfolio"
+         target="_blank" rel="noopener">
+        View on GitHub
+      </a>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span class="skill">Python</span>
+      <span class="skill">Data Science</span>
+      <span class="skill">GitHub</span>
+      <span class="skill">Problem Solving</span>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>
+        GitHub:
+        <a href="https://github.com/AryanPatilkulkarni-hub" target="_blank" rel="noopener">
+          github.com/AryanPatilkulkarni-hub
+        </a>
+      </p>
+
+      <p>
+        I am continuing to build my skills through programming,
+        academic projects, and data science practice.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Aryan Patilkulkarni
+  </footer>
+
+</body>
+</html>
